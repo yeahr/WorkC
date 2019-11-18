@@ -11,6 +11,7 @@ double average(int num,...){
     {
         sum += va_arg(vaList,int);
     }
+    va_end(vaList);
 
     return sum/num;
 }
